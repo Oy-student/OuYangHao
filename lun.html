@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/tongYong.css">
+	<style>
+		.contant {
+			background: url(../images/bg.png) no-repeat;
+			background-size: 100% 100%;
+		}   
+		#onePast {
+			height: 40px;
+		}
+		#onePast p {
+			float: left;
+			margin-left:70px;
+			margin-top: 5px;
+			color: black;
+			font-size: 20px;
+			font-family: 华文行楷;
+		}
+		#dongtai {
+			width: 100%;
+			position: absolute;
+		}
+		#dtxx {
+			width: 234px;
+			height: 414px;
+			background: white;
+			overflow: hidden;
+		}
+		#dtxx ul {
+			width: 99%;
+		}
+		#dtxx ul li {
+			width: 100%;
+			background:#FCFCFD;
+			border-bottom: 1px solid gray;
+		}
+		#dtxx ul li .p1{
+			padding-bottom:10px;
+			height: 40px;
+			position: relative;
+			width: 100%;
+		}
+		#dtxx ul li > .p1>img {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			float: left;
+			left: 10px;
+			top: 5px;
+			position: absolute;
+		}
+		#dtxx ul li >.p1 .span1 {
+			float: left;
+			top: 20px;
+			left: 60px;
+			font-size: 12px;
+
+			position: absolute;
+		}
+		#dtxx ul li >.p1 .span2{
+			float: right;
+			font-size: 12px;
+			color: gray;
+			margin-right: 5px;
+			
+			margin-top: 10px;
+		
+		}
+		#dtxx ul li>.li_contant {
+			width: 100%;
+			height: 100%;
+		}
+		#dtxx ul li>.li_contant .iimg {
+			width: 100%;
+		}
+		.clear {
+			clear: both;
+		}
+		#dtxx ul li .p2 {
+			height: 30px;
+		}
+		#dtxx ul li>.p2 .span2 {
+			font-size: 12px;
+			color: gray;
+			margin:5px 0px 0px 10px;
+			display: block;
+			float: left;
+		}
+		 #dtxx ul li>.p2 .span4 {
+			font-size: 12px;
+			color: gray;
+			margin:5px 0px 0px 10px;
+			display: block;
+			float: left;
+		} 
+		#dtxx ul li>.p2 img{
+			width: 15px;
+			height: 15px;
+		}
+		#dtxx .text1 {
+			background: white;
+		}
+		#dtxx .text1 p {
+			font-size: 12px;
+			color: blue;
+			text-align: center;
+			line-height: 18px;
+		}
+		#dtxx .text1 span {
+			margin: 15px 0px 15px 12px;
+			float: left;
+			width: 60px;
+			text-align: center;
+			line-height: 30px;
+			height: 30px;
+			border:1px solid;
+		}
+		.clear{
+			clear:both;
+		}
+
+		.contant1 {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: url(../images/bg1.jpg);
+			display: none;
+		}
+		.contant1 .top {
+			height: 30px;
+			margin-top: 20px;
+		}
+		.contant1 .top img{
+			width: 15px;
+		}
+		.neirong img {
+			width: 100px;
+			background: rgba(0,0,0,0.3);
+			margin:5px;
+		}
+		.neirong li {
+			float: left;
+		}
+		.cai {
+			position: absolute;
+			width: 100%;
+			height: 47px;
+			bottom: 0;
+			background: #2B88C1;
+		}
+		.cai li img {
+			width: 20px;
+			height: 20px;
+			margin-left: 13px;
+		}
+		.cai li {
+			float: left;
+			font-size: 12px;
+			margin:3px 35px;
+			color:white;
+		}
+		.cai span {
+			position: absolute;
+			display: block;
+			background: #608EFE;
+			width: 50px;
+			height: 50px;
+			bottom:20px;
+			left: 38%;
+			border-radius: 50%;
+			font-size: 40px;
+			line-height: 50px;
+			color: white;
+			text-align: center;
+		}
+	</style>
+</head>
+<body ondragstart="return false">
+	<div class="contant">
+		<div id="zhan"></div>
+		<div id="onePast">
+			<span style="float: left;" ><img src="images/left.png" alt="" width="30" height="30" style="margin-top: 5px;"></span>
+			<p>R圈</p>
+			<span style="float: right;"><img src="images/ser.png" alt="" width="30" height="30"></span>
+		</div>
+		<div id="dongtai">
+			<div id="dtxx">
+				<ul style="margin-top:0px;">
+					<li>
+						<p class="p1">
+							<img src="images/tx1.png" alt="">
+							<span class="span1">people</span>
+							<span class="span2">1小时前</span>
+						</p>
+						<div class="li_contant">
+							<img src="images/tp1.png" alt="" class="iimg">
+						</div>
+						<p class="p2">
+							<span class="span2"><img src="images/love.png" alt="">2</span>
+							<span class="span4"><img src="images/eye.png" alt="">5</span>
+						</p>
+						<div class="clear"></div>
+						<div class="text1">
+							<p>在这片海洋中，诺无法向上攀游，就只有向下沉沦，是要前进或是溺死就得看自己的选择。既然不甘心，就变得更强！
+							</p>
+							<span>喜欢</span>
+							<span>评论</span>
+							<span>分享</span>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li>
+						<p class="p1">
+							<img src="images/tx2.png" alt="">
+							<span class="span1">people</span>
+							<span class="span2">1小时前</span>
+						</p>
+						<div class="li_contant">
+							<img src="images/tp2.png" alt="" class="iimg">
+						</div>
+						<p class="p2">
+							<span class="span2"><img src="images/love.png" alt="">2</span>
+							<span class="span4"><img src="images/eye.png" alt="">5</span>
+						</p>
+						<div class="clear"></div>
+						<div class="text1">
+							<p>在这片海洋中，诺无法向上攀游，就只有向下沉沦，是要前进或是溺死就得看自己的选择。既然不甘心，就变得更强！
+							</p>
+							<span>喜欢</span>
+							<span>评论</span>
+							<span>分享</span>
+							<div class="clear"></div>
+						</div>
+					</li>
+					<li>
+						<p class="p1">
+							<img src="images/tx3.png" alt="">
+							<span class="span1">people</span>
+							<span class="span2">1小时前</span>
+						</p>
+						<div class="li_contant">
+							<img src="images/tp3.png" alt="" class="iimg">
+						</div>
+						<p class="p2">
+							<span class="span2"><img src="images/love.png" alt="">2</span>
+							<span class="span4"><img src="images/eye.png" alt="">5</span>
+						</p>
+						<div class="clear"></div>
+						<div class="text1">
+							<p>在这片海洋中，诺无法向上攀游，就只有向下沉沦，是要前进或是溺死就得看自己的选择。既然不甘心，就变得更强！
+							</p>
+							<span>喜欢</span>
+							<span>评论</span>
+							<span>分享</span>
+							<div class="clear"></div>
+						</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="contant1">
+		<div class="top">
+			<span><img src="images/off.png" alt="" style="float:left;margin-top: 18px;margin-left: 13px;"></span>
+			<p style="float: left;margin-left:29%;margin-top: 15px;">新纪录</p>
+			<button style="width: 50%;height: 50px;position: absolute;bottom: 60px;left:25%;border-radius: 10px;border:none;">发布</button>
+		</div>
+		<div class="neirong">
+			<form action="">
+				<textarea name="" id="" cols="30" rows="10" style="margin-top: 20px;color:gray;text-indent: 20px;width:90%;border:none; border-top:5px solid #9BC0CC;margin-left:10px;padding-top: 20px;height: 70px;" value
+			="实时动态">实时动态...</textarea>
+				<input type="file" / style="display: none;" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" id="inputBox">
+			</form>
+			
+			<ul id="pic">
+				<li><img src="images/add.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div class="cai">
+		<ul>
+			<li>
+				<img src="images/love.png" alt="">
+				<p>我的关注</p>
+			</li>
+			<li>
+				<img src="images/love.png" alt="">
+				<p>热门推荐</p>
+			</li>
+			<span class="fa">
+				+
+			</span>
+		</ul>
+	</div>
+	<div class="contant1" style="background: none">
+		<img src="images/guanzhu.jpg" alt="" style="width: 232px;height: 464px;margin-top: 20px;">
+		<span style="width: 30px;height: 20px;position: absolute;left:3px; top: 30px;"></span>
+	</div>
+	<script src="js/WandH.js"></script>
+	<script>
+		$$("span")[0].onclick = function(){
+			location.href="main.html";
+		}
+		var ul = ID("dtxx").children[0];
+		ul.onmousedown = function(e){
+		y = e.clientY	;
+		t= ul.offsetTop;
+		isDown = true;
+		var uh = ul.clientHeight;
+		var th = ID("dtxx").clientHeight;
+		window.onmousemove = function(e){
+			if(isDown == false){
+				return;
+			}
+			nx = e.clientY;
+			nl = nx - (y -t) ;
+			if(nl >= 0 ){
+				nl = 0;
+			}
+			if(nl < (th -uh - 17)){
+				nl = (th -uh - 17);
+			}
+			ul.style.marginTop = nl + "px";	
+			}
+		}
+		window.onmouseup = function(){
+			isDown = false;
+		}
+		$("fa")[0].onclick = function(){
+			$("contant")[0].style.display = "none";
+			$("contant1")[0].style.display = "block";
+			$("cai")[0].style.display = "none";
+		}
+	var pic = ID("pic");
+	var picL = pic.children.length;
+	var file = $$("input")[0];
+	var	li = ID("pic").children[picL - 1];
+	li.onclick = function(){
+		file.click(aa());
+	}
+	function aa(){
+	if(file.value != "" ){
+		var inputBox = ID("inputBox");
+		var c1 = document.createElement("li");
+		var img = document.createElement("img")
+		var reader = new FileReader();
+  		reader.readAsDataURL(inputBox.files[0]);
+  		reader.onload = function(){
+    		//读取完成后，将结果赋值给img的src
+    		img.src = this.result;
+    		img.style.width = "100px";
+    		img.style.height = "100px";
+    		return a = this.result;
+  		}
+  		if(ID("pic").children.length > 1){
+  			alert("不能再添加了");
+  		}else {
+  			c1.appendChild(img);
+			pic.insertBefore(c1,li);	
+  		}
+	}
+var a = null;
+	$("top")[0].children[2].onclick = function(){
+		var text = $$("textarea")[0].value;
+		var c2 = document.createElement("li");
+		ul.insertBefore(c2,ul.children[0]);
+
+		var p1 = document.createElement("p");
+		p1.setAttribute("class","p1");
+		c2.appendChild(p1);
+		var img1 = document.createElement("img");
+		img1.src = "images/bg.jpg";
+		p1.appendChild(img1);
+		var span1 = document.createElement("span");
+		span1.setAttribute("class","span1");
+		span1.innerHTML = "people";
+		p1.appendChild(span1);
+		var span2 = document.createElement("span");
+		span2.setAttribute("class","span2");
+		
+		span2.innerHTML = "刚刚";
+		p1.appendChild(span2);
+		
+
+		var div = document.createElement("div");
+		div.setAttribute("class","li_contant");
+		c2.appendChild(div);
+		
+		var img7 = document.createElement("img");
+		img7.src = a;
+		if(a != null){
+			img7.setAttribute("class","iimg");
+			div.appendChild(img7);
+			
+		}c2.appendChild(div);
+		if(ID("pic").children.length > 1){
+			ID("pic").children[0].remove();
+		}
+		
+
+
+		var p2 = document.createElement("p");
+		p2.setAttribute("class","p2");
+		c2.appendChild(p2);
+		var span4 = document.createElement("span");
+		span4.setAttribute("class","span2");
+		var span7 = document.createElement("span");
+		span7.innerHTML = "1";
+		var img3 = document.createElement("img");
+		img3.src = "images/love.png";
+		span4.appendChild(img3);
+		span4.appendChild(span7);
+		p2.appendChild(span4);
+		var span6 = document.createElement("span");
+		span6.setAttribute("class","span4");
+		var img5 = document.createElement("img");
+		img5.src = "images/eye.png";
+		var span8 = document.createElement("span");
+		span8.innerHTML = "1";
+		span6.appendChild(img5);
+		p2.appendChild(span6);
+		span6.appendChild(span8);
+
+
+		var text1 = document.createElement("div");
+		text1.setAttribute("class","text1");
+		var textP = document.createElement("p");
+		textP.innerHTML = text;
+		text1.appendChild(textP);
+		var textP1 = document.createElement("span");
+		var textP2 = document.createElement("span");
+		var textP3 = document.createElement("span");
+		textP1.innerHTML = "喜欢";
+		textP2.innerHTML = "评论";
+		textP3.innerHTML = "分享";
+		text1.appendChild(textP1);
+		text1.appendChild(textP2);
+		text1.appendChild(textP3);
+		var textP4 = document.createElement("div");
+		textP4.setAttribute("class","clear");
+		text1.appendChild(textP4);
+		c2.appendChild(text1);
+		$("contant")[0].style.display = "block";
+		$("contant1")[0].style.display = "none";
+		$("cai")[0].style.display = "block";
+	}
+}
+
+$$("textarea")[0].onfocus = function(){
+	if(this.value == "实时动态..."){
+		this.value = "";
+		this.style.color = "black";
+	}
+}
+$$("textarea")[0].onblur = function(){
+	if(this.value == ""){
+		this.value = "实时动态...";
+		this.style.color = "gray";
+	}
+}
+
+
+$("top")[0].children[0].onclick = function(){
+	$("contant1")[0].style.display = "none";
+	$("contant")[0].style.display = "block";
+	$("cai")[0].style.display = "block";
+}
+$("cai")[0].children[0].children[0].onclick = function(){
+		$("cai")[0].style.display = "none";
+		$("contant")[0].style.display = "none";
+		$("contant1")[1].style.display = "block";
+	}
+$("contant1")[1].onclick = function(){
+	$("cai")[0].style.display = "block";
+	$("contant")[0].style.display = "block";
+	$("contant1")[1].style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/move.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/mian.css">
+	<style>
+		.span1 {
+	position: absolute;
+	display: block;
+	width: 60px;
+	top: 90px;
+	right: 0;
+	height: 230px;
+	cursor: pointer;
+}
+		.span2 {
+	position: absolute;
+	display: block;
+	width: 60px;
+	top: 90px;
+	left: 0;
+	height: 230px;
+	cursor: pointer;
+}
+	#stu p {
+		font-size: 14px;
+		float: left;
+		margin:25px 25px;
+	}
+	</style>
+</head>
+<body style="background: #309FFB;">
+
+	
+
+	<div style="height: 464px; position:absolute; z-index:0;width:232px;top: 20px;left: 3px; ">
+			
+		<a href="main.html" style="display: block;width: 30px;height: 30px;background: url(images/left.png) no-repeat;background-size: cover;margin-left: 0px;margin-bottom: 10px;" >
+		</a>
+		<hr style="margin:0px 0px 30px 0px; color: gray; animation:len 1s;">
+		<div class="div1">
+			<h1>Study Mode</h1>
+
+			<p >- 倒计时 - <br>	
+				count down
+			</p>
+			<p>
+				<span id="p2">1</span>
+				hours
+			</p>
+			<p id="p3"></p>
+			<button onclick="countDownOne()">正式开始</button>
+		</div>
+		<a class="span1" href="interface2.html"></a>
+		<a class="span2" href="interface3.html"></a>
+		<!-- 字体变大跟倒计时的出现 -->
+	</div>
+	
+
+	<div style="height: 524px;width: 100%; background: #309FFB;padding-top: 20px;position: absolute;left: 0;top: 0;display: none;" id="stu">
+		<p class="tou">★</p>
+		<p style="color: white;">学习模式</p>
+		<p class="tou">★</p>
+		<p id="text1"></p>
+		<img src="images/bg.png" alt="" style="width: 104%;height: 110px;position: absolute;left: -15px;top: 120px;">
+		<img src="images/yue.png" alt="" style="width: 100%;height: 90px;position: absolute;left: -12px;top: 270px;">
+		<img src="images/eng.png" alt="" style="width: 100%;height: 90px;position: absolute;left: -12px;top: 365px;">
+		<img src="images/xuexi.png" alt="" style="width: 100%;height: 40px;position: absolute;left: -12px;top: 470px;">
+		<p class="tt" style="position: absolute;left: 48px;top: 291px;color:rgba(0,0,0,0.2)">0</p>
+		<p class="tt" style="position: absolute;left: 48px;top: 388px;color:rgba(0,0,0,0.2)">0</p>
+	</div> 
+
+
+	<div style="height: 464px; width: 230px; background: blue;opacity: 0;display: none;" id="layer"></div>
+
+	<div style="position: relative; top: 80px; background: rgba(255,255,255,0.8); width: 230px;
+	height:300px; z-index: 5;" id="div2">
+		<span style="float: right; cursor: pointer; margin-right: 10px;" onclick="guan();">
+		X
+		</span>
+		<img src="images/denglu.png" alt="" style="width: 200px;height: 200px;margin: 30px 0px 0px 12px;">
+		<p style="text-align: center; color: black;">正左与正右均可翻页</p>
+	</div>
+	<script src="js/time.js"></script>
+</body>
+</html>

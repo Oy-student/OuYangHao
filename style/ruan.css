@@ -1,0 +1,52 @@
+.contant {
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg6.png);
+}
+.con {
+	border-radius: 20px;
+	width: 200px;
+	height: 300px;
+	position: relative;
+	top: 60px;
+	background: white;
+	text-align: center;
+	padding-top: 20px;
+}
+h3 {
+	color: black;
+
+}
+p {
+	color: gray;
+}
+h5 {
+	margin-top: 10px;
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 30px;
+	border:1px solid rgb(1,129,150);
+}
+ul {
+	width: 50%;
+	border:1px solid rgb(1,129,150);
+	height: 21px;
+	border-radius:20px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+li {
+	float: left;
+	width: 49%;
+	font-size: 12px;
+	height: 21px;
+	line-height: 21px;
+}
+.bian {
+	color: white;
+	background: rgba(1,129,150,0.8);
+}
+.clear {
+	clear:both;
+}

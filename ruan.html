@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/tongYong.css">
+	<link rel="stylesheet" type="text/css" href="style/ruan.css">
+	<style>
+		.tu {
+			width: 234px;
+			height: 524px;
+			background: url(images/kong.jpg);
+			background-size: 234px 524px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="contant" >
+		<a href="main.html">
+			<img src="images/left.png" alt="" style="width: 30px;height: 30px;margin-top: 20px;margin-left: 10px;">
+		</a>
+		<div class="con">
+			<h3>软件控制</h3>
+			<p style="font-size: 13px;margin-top: 10px;">是否要控制以下权限?</p>
+			<h5 class="bian">通讯权限</h5>
+			<h5 class="bian">娱乐权限</h5>
+			<h5 class="bian">其他权限</h5>
+			<ul>
+				<li style="border-right:1px solid rgb(1,129,150);" class="bian">开启</li>
+				<li>关闭</li>
+			</ul>
+			<div class="clear"></div>
+			<p style="font-size: 12px;margin-top: 20px;">温馨提示，开启权限后您无法使用此类软件</p>
+		</div>
+	</div>
+	<div class="tu">
+		<span style="width: 30px;height: 25px;display: block;position: absolute;left: 15px;top: 20px;font-size: 20px;" class="bu">&lt;</span>
+	</div>
+	<script src="js/WandH.js"></script>
+	<script>
+		var h = $$("h5");
+		for(var i = 0; i < h.length; i++){
+			h[i].onclick = function(){
+				if(this.classList.contains('bian')){
+					this.classList.remove("bian");
+				}else {
+					$("tu")[0].style.display = "block";
+					$("contant")[0].style.display = "none";
+					this.classList.add("bian");
+				}
+			}
+		}
+
+		$$("li")[0].onclick = function(){
+				if(this.classList.contains('bian')){
+					$$("li")[1].classList.add("bian");
+					this.classList.remove("bian");
+				}else {
+					$$("li")[1].classList.remove("bian");
+					this.classList.add("bian");
+				}
+			}
+		$$("li")[1].onclick = function(){
+				if(this.classList.contains('bian')){
+					$$("li")[0].classList.add("bian");
+					this.classList.remove("bian");
+				}else {
+					$$("li")[0].classList.remove("bian");
+					this.classList.add("bian");
+				}
+			}	
+		$("bu")[0].onclick = function(){
+			$("contant")[0].style.display = "block";
+			$("tu")[0].style.display = "none";
+		}
+	</script>
+</body>
+</html>

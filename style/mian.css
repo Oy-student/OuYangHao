@@ -1,0 +1,61 @@
+.div1 > p {
+	animation: touming 3s;
+}
+
+h1 {
+	font-family:  Footlight MT Light;
+	animation: che 0.5s;
+	width: 230px;
+	text-align: center;
+ 	color: black;
+}
+.a1 {
+}
+button {
+	cursor: pointer;
+}
+hr {
+	animation:len 1s;
+}
+img {
+	width: 200px;
+	height: 20px;
+	margin-left: 12px;
+	margin-bottom: 30px;
+}
+
+.div1 {
+	position: relative;
+}
+.div1>p {
+	font-size: 16px;
+	color: black;
+	text-align: center;
+	animation:touming 1s;
+	margin-top: 20px;
+}
+#p2 {
+	font-size: 100px;
+	color: black;
+
+}
+button {
+	border:1px solid;
+	width: 100px;
+	height: 40px;
+	color:gray;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 65px;
+}
+#text1 {
+	position: absolute;
+	left: 65px;
+	top: 60px;
+	height: 20px;
+	color: white;
+}
+
+

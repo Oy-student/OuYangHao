@@ -1,0 +1,77 @@
+/* 翻转 */
+@keyframes flipping {
+	from{transform:rotateZ(0deg);}
+	to {transform:rotateZ(360deg);}
+}
+@keyframes left1{
+	from{margin-left: -10px;}
+	to{margin-left:12px;}
+}
+@keyframes right1{
+	from{margin-right: -10px;}
+	to{margin-right:22px;}
+}
+@keyframes left2{
+	from{margin-left: 0px;}
+	to{margin-left:60px;}
+}
+@keyframes up1{
+	from{margin-top: 30px;}
+	to{margin-top:20px;}
+}
+@keyframes len {
+	from{width: 0px;}
+	to{width: 100%;}
+}
+/* 透明 */
+@keyframes touming {
+	10% {opacity: 0;}
+	100% {opacity: 1;}
+}
+/* 字体闪烁过去 */
+@keyframes che {
+	10% {
+		background-image: -webkit-linear-gradient(left,white,black 20%); 
+		-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+		 -webkit-background-clip: text;
+	}
+	30% {
+		background-image: -webkit-linear-gradient(left,black,white 20%,black 40%); 
+		-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */ 
+		-webkit-background-clip: text;
+	}
+	50% {
+		background-image: -webkit-linear-gradient(left,black,black 20%,white 40%, black 60%); 
+		-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */ 
+		-webkit-background-clip: text;
+	}
+	70% {
+		background-image: -webkit-linear-gradient(left,black,black 20%,black 40%, white 60%, black 80%); 
+		-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */ 
+		-webkit-background-clip: text;
+	}
+	100% {
+		background-image: -webkit-linear-gradient(left,black,black 20%,black 40%, black 60%, white 80%,black 100%); 
+		-webkit-text-fill-color: transparent;/* 将字体设置成透明色 */ 
+		-webkit-background-clip: text;
+	}
+}
+
+
+/* 字体变大 */
+@keyframes text {
+	from {
+		font-size: 100px;
+		opacity: 1;
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+	}
+	to {
+		font-size: 200px;
+		opacity: 0;
+		width: 150px;
+		height: 150px;
+		line-height: 150px;
+	}
+}

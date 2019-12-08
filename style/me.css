@@ -1,0 +1,257 @@
+.contant {
+	width: 100%;
+	height: 100%;
+}
+#top {
+	width: 100%;
+	height: 30px;
+}
+#top img {
+	height: 30px;
+}
+#top span:nth-child(1){
+	float: left;
+}
+#top span:nth-child(2){
+	float: right;
+}
+#xinxi {
+	width: 100%;
+	height: 160px;
+}
+#xinxi>img {
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin-top: 70px;
+}
+#xinxi p {
+	text-align: center;
+	float: left;
+	margin-top: 85px;
+	margin-left: 10px;
+	font-size: 20px;
+}
+#xinxi p img {
+	width: 25px;
+	height: 25px;
+}
+
+#choose>ul {
+	width: 100%;
+	height: 20px;
+	border-top: 2px solid;
+	background: white;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+#choose>ul>li {
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	width: 36%;
+	height: 40px;
+	cursor: pointer;
+}
+#choose>ul>li:nth-child(1){
+	margin-left: 30px;
+	border-right: 1px solid;
+}
+#choose img {
+	width: 20px;
+}
+
+#dongtai {
+	width: 100%;
+	position: absolute;
+}
+#dtxx {
+	width: 237px;
+	height: 258px;
+	background: white;
+	overflow: hidden;
+}
+#dtxx ul {
+	width: 100%;
+}
+#dtxx ul li {
+	width: 100%;
+	background:#e2e4e8;
+	border-bottom: 1px solid gray;
+}
+#dtxx ul li .p1{
+	padding-bottom:10px;
+	height: 40px;
+	position: relative;
+	width: 100%;
+}
+#dtxx ul li > .p1>img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	left: 10px;
+	top: 5px;
+	position: absolute;
+}
+#dtxx ul li >.p1 .span1 {
+	float: left;
+	top: 20px;
+	left: 60px;
+	font-size: 12px;
+
+	position: absolute;
+}
+#dtxx ul li >.p1 .span2>img{
+	float: right;
+	margin-right: 5px;
+	width: 15px;
+	margin-top: 10px;
+	height: 15px;
+}
+#dtxx ul li>.li_contant {
+	width: 100%;
+	height: 100%;
+}
+#dtxx ul li>.li_contant .iimg {
+	width: 200px;
+	height: 150px;
+	margin-left: 20px;
+}
+.clear {
+	clear: both;
+}
+#dtxx ul li>.p2 .span1 {
+	font-size: 12px;
+	color: gray;
+	margin:10px 5px;
+	display: block;
+	float: left;
+}
+#dtxx ul li .p2 {
+	height: 30px;
+}
+#dtxx ul li>.p2 .span2 {
+	font-size: 12px;
+	color: gray;
+	margin:10px 0px 0px 130px;
+	display: block;
+	float: left;
+}
+#dtxx ul li>.p2 .span3 {
+	font-size: 12px;
+	color: gray;
+	margin:10px 0px 0px 10px;
+	display: block;
+	float: left;
+}
+ #dtxx ul li>.p2 .span4 {
+	font-size: 12px;
+	color: gray;
+	margin:10px 0px 0px 10px;
+	display: block;
+	float: left;
+} 
+#dtxx ul li>.p2 img{
+	width: 15px;
+	height: 15px;
+}
+/* @keyframes phone{
+	from{bottom: -30px;}
+	to{bottom: 0px;}
+} */
+#phone {
+	width: 40px;
+	height: 40px;
+	background: gray;
+	position: absolute;
+	bottom:3px;
+	left: 45%;
+	border-radius: 50%;
+}
+#phone img {
+	width: 30px;
+	height: 30px;
+	margin:4px 5px;
+}
+
+#xinxi1 {
+	width: 100%;
+	height: 228px;
+	position: absolute;	
+	display: none;
+	background: white;
+} 
+#xinxi1 li {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+}
+#xinxi1 li>img {
+	width: 30px;
+	margin:10px 15px 0px 8px;
+	float: left;
+}
+#xinxi1 p {
+	float: left;
+	margin-top: 8px;
+	color: #5A5959;
+}
+#xinxi1 span {
+	float: right;
+	line-height: 40px;
+	color: #5A5959;
+}
+#xinxi1 span>img {
+	st5float: right;
+	width: 20px;
+	margin:10px 8px 0px 15px;
+}
+
+@keyframes xuan {
+	from {
+			opacity: 0;
+			bottom: -40px;
+		}to {
+			opacity: 1;
+			bottom: 0px;
+		}
+}
+#choose1 {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	animation:xuan 0.3s;
+	display: none;
+	background: rgba(0,0,0,0.2);
+}
+#choose1 p {
+	margin-top: 5px;
+}
+
+.contant1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/bg1.jpg);
+	display: none;
+}
+.contant1 .top {
+	height: 30px;
+	margin-top: 20px;
+}
+.contant1 .top img{
+	width: 15px;
+}
+.neirong img {
+	width: 100px;
+	background: rgba(0,0,0,0.3);
+	margin:5px;
+}
+.neirong li {
+	float: left;
+}

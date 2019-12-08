@@ -1,0 +1,28 @@
+* {
+	margin:0 auto;
+	padding:0;
+}
+#container {
+	width: 282px;
+	height: 570px;
+	background: url(../images/phone.png) no-repeat ; 
+	position: relative;
+}
+#container div {
+	position: absolute;
+}
+#container>.div1 {
+	width: 80%;
+	top: 20px;
+	left: 25px;
+	z-index: 99999;
+	color: blue;
+}
+#container>.div2{
+	left: 22px;
+	top: 18px;
+	width: 238px;
+	height: 525px;
+	border-radius: 27px;
+	overflow: hidden;
+}

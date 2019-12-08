@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<style>
+		p {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div id="container" >
+		<div class="div1">
+			<p style="font-size: 12px;">
+				<span style="float: left;margin-left: 15px;">移动</span>
+				<span style="float:right;margin-right: 12px;margin-top: 4px;"></span>
+			</p>
+			<img src="images/phone_top.png" alt="" style="position: absolute;z-index: 999;top: -2px;left: 25.5%;">
+		</div>
+		<div class="div2">
+			<iframe src="index1.html" frameborder="0" height="100%" width="100%" scrolling="no" ></iframe>
+		</div>	
+	</div>
+
+	<script>
+		var span = document.getElementsByTagName("span")[1];
+		var date = new Date();
+		var hours = date.getHours();
+		var minutes = date.getMinutes();
+
+		function change(i){
+			if(i < 10){
+				i = '0' + i;
+			}
+			return i ;
+		}
+		hours = change(hours);
+		minutes = change(minutes);
+		span.innerHTML = hours + ":" + minutes;
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/move.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/mian.css">
+	<style>
+		.span1 {
+	position: absolute;
+	display: block;
+	width: 60px;
+	top: 90px;
+	right: 0;
+	height: 230px;
+	cursor: pointer;
+}
+		.span2 {
+	position: absolute;
+	display: block;
+	width: 60px;
+	top: 90px;
+	left: 0;
+	height: 230px;
+	cursor: pointer;
+}
+#text {
+	font-size: 40px;
+	color: white;
+	margin: 40px auto;
+}
+	</style>
+
+</head>
+<body style="background:#43A7FC;">
+	<div style="height: 464px;margin-top: 20px;">	
+		<a href="main.html"  style="display: block;width: 30px;height: 30px;background: url(images/left.png) no-repeat;background-size: cover;margin-left: 0px;margin-bottom: 10px;" >
+		</a>
+		<div class="div1">
+			<h1 style="color: white;font-size: 14px;"><pre>&lt;  自定义模式  &gt;</pre> </h1>
+			<p id="text"><span>00:</span><span>00:</span><span>00</span></p>
+			<ul style="width: 95%;height: 40px;background:rgba(255,255,255,0.2);border-radius: 20px;position: relative;" class="ul0">
+				
+				<li style="width: 50px;height: 40px;border-radius: 20px;background: #D1D1DB;box-shadow: 2px 2px 2px black;float: left;list-style-type: none;position: absolute;z-index: 1;"></li>
+				<p style="font-size: 12px;color: white;position: absolute;left: 38%; line-height: 40px;z-index:0;">滑动解除控制</p>
+			</ul>
+
+			<ul style="width: 95%;height: 40px;background:rgba(255,255,255,0.2);border-radius: 20px;position: relative;margin: 40px auto;" class="ul0">
+				
+				<li style="width: 50px;height: 40px;border-radius: 20px;background: #D1D1DB;box-shadow: 2px 2px 2px black;float: left;list-style-type: none;position: absolute;z-index: 1;"></li>
+				<p style="font-size: 12px;color: white;position: absolute;left: 38%; line-height: 40px;z-index:0;">滑动开始控制</p>
+			</ul>
+
+			<ul style="width: 95%;height: 40px;background:rgba(255,255,255,0.2);border-radius: 20px;position: relative;" class="ul0">
+				
+				<li style="width: 50px;height: 40px;border-radius: 20px;background: #D1D1DB;box-shadow: 2px 2px 2px black;float: left;list-style-type: none;position: absolute;z-index: 1;"></li>
+				<p style="font-size: 12px;color: white;position: absolute;left: 38%; line-height: 40px;z-index:0;">滑动疯狂换肤</p>
+			</ul>
+
+		</div>
+		<!-- 字体变大跟倒计时的出现 -->
+	</div>
+	<script>
+		
+var ul = document.getElementsByClassName("ul0")[0];
+var li = ul.children[0];
+var x = 0;
+var y = 0;
+var l = 0;
+var t = 0;
+var isDown = false;
+var b = document.getElementsByTagName("a")[0];
+
+//鼠标按下事件
+li.onmousedown = function(e) {
+    //获取x坐标和y坐标
+    x = e.clientX;
+   	
+    //获取左部和顶部的偏移量
+    l = li.offsetLeft;
+    //开关打开
+    isDown = true;
+    //设置样式  
+    li.style.cursor = "move";
+    window.onmousemove = function(e) {
+    if (isDown == false) {
+      return;
+    }
+    li1.style.marginLeft = "0px";
+    //获取x和y
+    var nx = e.clientX;
+    //计算移动后的左偏移量和顶部的偏移量
+    var nl = nx - (x - l);
+    if(nl >= 173 ){
+        nl = 173;
+    }
+
+    /*超出范围*/
+    li.style.marginLeft = nl + 'px';
+    if(parseInt(li.style.marginLeft) > 173){
+        li.style.marginLeft = "173px";
+        }
+    if(parseInt(li.style.marginLeft) < 0){
+        li.style.marginLeft = "0px";
+        }
+    }
+}
+
+
+var ul1 = document.getElementsByClassName("ul0")[1];
+var li1 = ul1.children[0];
+var xx = 0;
+var yy = 0;
+var ll = 0;
+var tt = 0;
+var isDown = false;
+
+//鼠标按下事件
+li1.onmousedown = function(e) {
+    //获取x坐标和y坐标
+    xx = e.clientX;
+   
+    //获取左部和顶部的偏移量
+    ll = li.offsetLeft;
+    //开关打开
+    isDown = true;
+    //设置样式  
+    li1.style.cursor = "move";
+    li.style.marginLeft = "0px";
+    window.onmousemove = function(e) {
+
+    if (isDown == false) {
+      return;
+    }
+    //获取x和y
+    var nx = e.clientX;
+    //计算移动后的左偏移量和顶部的偏移量
+    var nl = nx - (x - l);
+    if(nl >= 173 ){
+        nl = 173;
+    }
+
+    /*超出范围*/
+    li1.style.marginLeft = nl + 'px';
+    if(parseInt(li1.style.marginLeft) > 173){
+        li1.style.marginLeft = "173px";
+        }
+    if(parseInt(li1.style.marginLeft) < 0){
+        li1.style.marginLeft = "0px";
+        }
+    }
+}
+
+
+
+var ul2 = document.getElementsByClassName("ul0")[2];
+var li2 = ul2.children[0];
+var xxx = 0;
+var yyy = 0;
+var lll = 0;
+var ttt = 0;
+var isDown = false;
+
+//鼠标按下事件
+var ran1 ,ran2,ran3;
+
+li2.onmousedown = function(e) {
+    //获取x坐标和y坐标
+    xxx = e.clientX;
+   
+    //获取左部和顶部的偏移量
+    lll = li.offsetLeft;
+    //开关打开
+    isDown = true;
+    //设置样式  
+    li1.style.cursor = "move";
+    li.style.marginLeft = "0px";
+    window.onmousemove = function(e) {
+    ran1 = Math.random() * 256;
+    ran2 = Math.random() * 256;
+    ran3 = Math.random() * 256;
+    var body = document.getElementsByTagName("body")[0];
+    if (isDown == false) {
+      return;
+    }
+    body.style.background = "rgb("+ran1+","+ran2+","+ran3+")";
+    //获取x和y
+    var nx = e.clientX;
+    //计算移动后的左偏移量和顶部的偏移量
+    var nl = nx - (x - l);
+    if(nl >= 173 ){
+        nl = 173;
+    }
+
+    /*超出范围*/
+    li2.style.marginLeft = nl + 'px';
+    if(parseInt(li2.style.marginLeft) > 173){
+        li2.style.marginLeft = "173px";
+        }
+    if(parseInt(li2.style.marginLeft) < 0){
+        li2.style.marginLeft = "0px";
+        }
+    }
+}
+var text = document.getElementById("text");
+var text1 = document.getElementById("text").children[0];
+var text2 = document.getElementById("text").children[1];
+var text3 = document.getElementById("text").children[2];
+
+//鼠标抬起事件
+var a = 0;
+var aa = 0;
+var aaa = 0;
+function dao(){
+	a++;
+
+	if(a == 60){
+		a = 0;
+		aa++;
+	}if(aa == 60){
+		aaa++;
+		aa = 0;
+	}
+	a = change(parseInt(a));
+	aa = change(parseInt(aa));
+	aaa = change(parseInt(aaa));
+	text1.innerHTML = aaa + ":";
+	text2.innerHTML = aa + ":";
+	text3.innerHTML = a;
+}
+var time ;
+window.onmouseup = function() {
+    //开关关闭
+    isDown = false;
+    li.style.cursor = 'default';
+    if(li.style.marginLeft == "173px"){
+    	clearInterval(time);
+    	b.onclick = function(){
+    		return true;
+    	}
+    }
+    if(li1.style.marginLeft == "173px"){
+    	time = setInterval(dao,1000);
+    	b.onclick = function(){
+    		return false;
+    	}
+    }
+    if(li1.style.marginLeft != "173px"){
+        li1.style.marginLeft  = 0;
+        clearInterval(time);
+    }
+}
+
+function change(i){
+	if(i < 10){
+		return "0" + i;
+	}
+	return i;
+}
+	</script>
+
+</body>
+</html>

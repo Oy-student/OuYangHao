@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/tongYong.css">
+	<style>
+	.contant {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.contant #top {
+		width: 100%;
+		height: 45px;
+	}
+	.contant #top p{
+		float: left;
+		margin-left: 28%;
+		font-size: 20px;
+		margin-top: 20px;
+	} 
+	.contant #top img {
+		width: 30px;
+		float: left;
+		margin-top: 20px;	
+	}
+	#newX {
+		width: 100%;
+		height: 464px;
+		background: #D4D4D4;
+		margin-top: 13px;
+
+	}
+
+	#newX li {
+		width: 90%;
+		height: 60px;
+		border-radius: 5px;
+		margin-top: 10px;
+		background: white;
+	}
+	#newX li img {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		float: left;
+		margin:10px;
+	}
+	#newX li:nth-child(1){
+		position: absolute;
+		right: 10px;
+	}
+	@keyframes tuo{
+		from {
+			right: 10px;
+			width: 90%;
+		}
+		to {
+			right: 10px;
+			width: 350px;
+		}
+	}
+	@keyframes tou{
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	#newX li:nth-child(2){
+		margin-top: 80px;
+	}
+	</style>
+</head>
+<body>
+	<div class="contant">
+		<div id="top">
+			<a href="main.html">
+				<img src="images/left.png" alt="">
+			</a>
+			<p>消息</p>
+		</div>
+		<div id="newX">
+			<ul style="padding-top: 10px;position: relative;">
+				<li>
+					<img src="images/logo.png" alt="">
+					<span style="float: left;color:red;margin-top: 10px;font-size: 13px;">系统</span>
+					<span style="float: left;color: red;font-size: 12px;margin-top:10px;margin-left:85px;">1小时前</span>
+					<span style="font-size: 12px;float: left;color: gray;position: absolute;width: 100%;left:54px;top:30px;color: red;">欢迎您加入Restrain</span>
+				</li>
+				<li >
+					<img src="images/tou4.jpg" alt="">
+					<span style="float: left;margin-top: 10px;font-size: 13px;">待办事项</span>
+					<span style="float: left;color: gray;font-size: 12px;margin-top:10px;margin-left:60px;">2小时前</span>
+					<span style="font-size: 12px;float: left;margin-top: 3px;color: gray;margin-left:-53px;">和小美打球</span>
+				</li>
+				<li>
+					<img src="images/tou3.jpg" alt="">
+					<span style="float: left;margin-top: 10px;font-size: 13px;">老王</span>
+					<span style="float: left;color: gray;font-size: 12px;margin-top:10px;margin-left:85px;">2小时前</span>
+					<span style="font-size: 12px;float: left;margin-top: 3px;color: gray;margin-left:-28px;">今天我要和小美一起去逛街</span>
+				</li>
+				<li>
+					<img src="images/tou1.jpg" alt="">
+					<span style="float: left;margin-top: 10px;font-size: 13px;">小美</span>
+					<span style="float: left;color: gray;font-size: 12px;margin-top:-20px;margin-left:110px;">24小时前</span>
+					<span style="font-size: 12px;float: left;margin-top: 3px;color: gray;margin-left:1px;">明天打球嘛？</span>
+				</li>
+				
+			</ul>
+			<div>
+				<p style="position: absolute;right:60px;width: 60px;height:60px;background: #0BA1F6;top: 78px;text-align: center;line-height: 60px;display: none;" class="yue">未读</p>
+			</div>
+			<div>
+				<p style="position: absolute;right:10px;width: 50px;height:60px;background: red;top: 78px;text-align: center;line-height: 60px;display: none;" class="delect"><img src="images/leji1.png" alt="" width="30" height="30" style="margin-top: 15px;"></p>
+			</div>
+		</div>
+	</div>
+	<script src="js/WandH.js"></script>
+	<script>
+		var i = 1;
+		$$("li")[0].onclick = function(){
+		i++;
+		if(i % 2 == 0){
+			this.style.animation = "tuo 1s";
+			this.style.width = "350px";
+			$("yue")[0].style.display = "block";
+			$("yue")[0].style.animation = "tou 2s";
+			$("delect")[0].style.display = "block";
+			$("delect")[0].style.animation = "tou 2s";
+		}else {
+			this.style.animation = "";
+			this.style.width = "90%";
+			$("yue")[0].style.display = "none";
+			$("delect")[0].style.display = "none";
+		}
+	}
+	
+	$("yue")[0].onclick = function(){
+		this.innerHTML = "已读";
+		this.style.color = "white";
+		$$("li")[0].children[1].style.color = "black";
+		$$("li")[0].children[2].style.color = "gray";
+		$$("li")[0].children[3].style.color = "gray";
+	}
+	$("delect")[0].onclick = function(){
+		$$("li")[0].remove();
+		$("yue")[0].style.display = "none";
+		$("delect")[0].style.display = "none";
+	}
+	</script>
+</body>
+</html>

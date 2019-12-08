@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/tongYong.css">
+	<link rel="stylesheet" type="text/css" href="style/meet.css">
+	<style>
+		.contant3 {
+			width: 234px;
+			height: 524px;
+			background: url(images/tong.jpg);
+			background-size: 234px 524px;
+			margin-top: 10px;
+			display: none;
+		}
+	</style>
+</head>
+<body style="background: #309FFB;">
+	<div class="contant" style="background: white;">
+		<div id="top">
+			<a href="main.html">
+				<img src="images/left.png" alt="">
+			</a>
+			<h3>会议模式</h3>
+		</div>
+		<form action="">
+			<div>
+				<p>地点:</p>
+				<input type="text">
+			</div>
+			<div>
+				<p>时间:</p>
+				<select name="hours" id="" style="margin-left: 15px;">
+					<option value="">请选择开始时小时</option>
+				</select>	
+				<span><b>:</b></span>
+				<select name="minuites" id="">
+					<option value="">请选择开始时分钟</option>
+				</select>
+				<span><b>—</b></span>
+				<select name="hours" id="" style="margin-left: 15px;">
+					<option value="">请选择结束后小时</option>
+				</select>	
+				<span><b>:</b></span>
+				<select name="minuites" id="">
+					<option value="">请选择结束后分钟</option>
+				</select>
+			</div>
+			<div>
+				<p>参与会议人员:</p>
+				<span style="margin-right: 10px;" class="span1"><b style="color: #1E9AE2;">+</b></span>
+				<input type="text" value="0" class="input1">
+				<span class="span1"><b style="color: #1E9AE2;">-</b></span>
+			</div>
+			<div>
+				<div style="float: left;width: 45%;">
+					<p>会议选项:</p>
+				</div>
+				<div style="float: left;width: 55%;">
+					<img src="images/jie.png" alt="" width="100%">
+				</div>
+			</div>
+			<button type="button">确定</button>
+		</form>
+	</div>
+	<div class="contant1" style="background: white;">
+		<div class="top">
+			<p>会议模式</p>
+		</div>
+		<p style="text-align: center;font-size: 13px;color: gray;width: 80%;margin:20px;">欢迎参加某有限公司关于xx工程建设安全与环境等相关会议</p>
+		<form action="">
+			<p style="height: 50px;line-height: 0px;">地点: <br>
+				<input type="text" style="border:none;border-bottom: 1px solid gray;margin-left: 0px;margin-top:20px;" readonly="readonly">
+			</p>
+			<p>会议时间: <span style="font-size: 12px;margin:0px 5px;" class="span1">2019/01/01</span><span style="font-size: 18px;color: gray;" class="span2">8:00-10:00</span>
+			</p>
+			<p>会议出席领导: <span style="font-size: 14px;margin:0px 8px;">张经理</span><span style="font-size: 14px;">李局长</span>
+			</p>
+			<p>大会主讲人: <span style="font-size: 14px;margin:0px 30px;">项目负责人</span>
+			</p>
+			<p>查看资料： <span style="font-size: 14px;margin:0px 40px;" class="xian">详细资料</span>
+			</p>
+			<p>会议记录： <span style="font-size: 14px;margin:0px 42px;">编辑记录</span>
+			</p>
+			<p class="p1">二维码： <span style="font-size: 14px;margin:0px 45px;">分享二维码</span>
+			</p>
+			<button style="background: #2799FA;color: white;" type="button">
+				会议结束，自动返回
+			</button>
+		</form>
+	</div>
+	<div class="contant2" >
+		<span class="btn">
+			
+		</span>
+		<img src="images/erweima.jpg" alt="">
+	</div>
+	<div class="contant3" >
+		<span style="display: block;width: 20px;height: 20px;position:absolute;left: 10px;top: 20px;" class="f"></span>
+	</div>
+	<script src="js/WandH.js"></script>
+	<script src="js/meet.js"></script>
+	<script>
+		$("f")[0].onclick = function(){
+			$("contant1")[0].style.opacity = "1";
+			$("contant3")[0].style.display = "none";
+		}
+		$("xian")[0].onclick = function(){
+			$("contant1")[0].style.opacity = "0";
+			$("contant3")[0].style.display = "block";
+		}
+	</script>
+</body>
+</html>

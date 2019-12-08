@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/tongYong.css">
+	<style>
+		.contant {
+			width: 100%;
+			height: 100%;
+		}
+		.top {
+			width: 100%;
+			height: 60px;
+			background: #309FFB;
+		}
+		.top img {
+			width: 30px;
+			margin-top: 22px;
+			float: left;
+		}
+		.top p {
+			float: left;
+			line-height: 78px;
+			margin-left: 60px;
+			font-size: 18px;
+			color: white;
+		}
+		.nnn {
+			
+		}
+		.nnn>ul>li{
+			width: 100%;
+			font-size: 15px;
+			
+			height: 60px;
+			padding-left: 20px;
+			padding-top: 20px;
+		} 
+		.nnn>ul>li>ul{
+			width:40px;
+			height: 20px;
+			background: #D81E07;
+			float: left;
+			margin-left: 20px;
+			border-radius: 30px;
+		}
+		.nnn>ul>li>ul li{
+			width: 20px;
+			height: 20px;
+			float: left;
+			border-radius: 50%;
+			border:1px solid #D81E07;
+			box-sizing: border-box;
+		}
+		.nnn>ul>li>ul li:nth-child(2){
+			background: white;
+			border-radius: 50%;
+			
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="contant">
+		<div class="top">
+			<a href="more.html">
+				<img src="images/left.png" alt="">
+			</a>
+			<p>动态管理</p>
+		</div>
+		<div class="nnn">
+			<ul>
+				<li>
+					<p style="width: 50%;margin-left: 0px;float: left;">
+						<span>锁定我的状态</span><br>
+						<span style="font-size: 12px;color: gray;">锁定后仅自己可见</span>
+					</p>
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+				</li>
+				<li>
+					<p style="width: 50%;margin-left: 0px;float: left;">
+						<span>隐藏我的地址</span><br>
+					</p>
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/WandH.js"></script>
+	<script>
+		var i = 1;
+		$$("ul")[1].children[0].onclick = function(){
+			i++;
+			if(i % 2 == 0){
+				this.style.background = "white";
+				$$("ul")[1].children[1].style.background="none";
+			}else {
+				this.style.background = "none";
+				$$("ul")[1].children[1].style.background="white";
+			}
+		}
+		$$("ul")[1].children[1].onclick = function(){
+			i++;
+			if(i % 2 == 0){
+				this.style.background = "white";
+				$$("ul")[1].children[0].style.background="none";
+			}else {
+				this.style.background = "none";
+				$$("ul")[1].children[0].style.background="white";
+			}
+		}
+		var b = 1;
+
+		$$("ul")[2].children[0].onclick = function(){
+			b++;
+			if(b % 2 == 0){
+				this.style.background = "white";
+				$$("ul")[2].children[1].style.background="none";
+			}else {
+				this.style.background = "none";
+				$$("ul")[2].children[1].style.background="white";
+			}
+		}
+		$$("ul")[2].children[1].onclick = function(){
+			b++;
+			if(b % 2 == 0){
+				this.style.background = "white";
+				$$("ul")[2].children[0].style.background="none";
+			}else {
+				this.style.background = "none";
+				$$("ul")[2].children[0].style.background="white";
+			}
+		}
+	</script>
+</body>
+</html>

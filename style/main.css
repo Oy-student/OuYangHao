@@ -1,0 +1,267 @@
+.bgc {
+	width: 234px;
+	height: 524px;
+}
+.contant {
+	background: url(../images/bg4.png) no-repeat;
+	background-size: 100% 100%;
+}   
+#onePast {
+	height: 40px;
+}
+#onePast p {
+	float: left;
+	margin-left: 45px;
+	color: white;
+	font-size: 25px;
+	font-family: 华文行楷;
+}
+
+#input {
+	width: 90%;
+	height: 30px;
+	position: relative;
+}
+#input input {
+	width: 88%;
+	height: 30px;
+	border-radius: 20px;
+	border:none;
+	padding-left: 30px;
+	color: gray;
+
+}
+#contant1 {
+	width: 237px;
+	height: 140px;
+	margin-top: 34px;
+}
+#contant1 .top {
+	height: 30px;
+	width: 100%;
+	font-size: 14px;
+}
+#contant1 .top p:nth-child(1){
+	float: left;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+#contant1 .top p:nth-child(2){
+	float: right;
+	margin-top: 5px;
+	color: gray;
+	font-size: 12px;
+	margin-right: 15px;
+}
+#contant1 ul li a {
+	font-size: 12px;
+	color: gray;
+}
+#contant1 .bottom ul {
+	width: 100%;
+	height: 100px;
+}
+#contant1 .bottom li {
+	float: left;
+	width: 50px;
+	margin-left: 9px;
+	margin-top:20px;
+}
+#contant1 .bottom img {
+	border-radius: 50%;
+	width: 50px;
+}
+
+
+#contant2 {
+	width: 237px;
+	height: 140px;
+}
+#contant2 .top {
+	height: 30px;
+	width: 100%;
+	font-size: 12px;
+}
+#contant2 .top p:nth-child(1){
+	float: left;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+#contant2 .bottom {
+	width: 100%;
+	height: 160px;
+}
+#contant2 ul {
+	width:540px;
+}
+#contant2 li {
+	width: 110px;
+	float: left;
+	margin-left: 10px;
+}
+
+#contant2 li a img {
+	display: block;
+	width: 125px;
+	height: 140px;
+}
+#nav1 {
+	width: 100%;
+	height: 50px;
+	margin-top: 63px;
+}
+#nav1 ul li a {
+	font-size: 12px;
+	color: gray;
+}
+#nav1 ul {
+	width: 100%;
+	height: 45px;
+	/* background: white; */
+}
+#nav1  li {
+	float: left;
+	width: 40px;
+	margin-left: 13px;
+}
+#nav1  img {
+	width: 26px;
+	height: 25px;
+}
+#add {
+	position: absolute;
+	bottom: 25px;
+	left: 42%;
+}
+#add p {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	box-shadow: 0px 0px 6px blue;
+	background: rgba(0,0,255,0.6);
+}
+@keyframes quan {
+	from {
+		width: 120px;
+		height: 120px;
+		margin-top: 20px;
+	}to {
+		width: 60px;
+		height: 60px;
+		margin-top: 40px;
+	}
+}
+@keyframes quan1 {
+	from {
+		width: 60px;
+		height: 60px;
+		margin-top: 40px;
+		}to {
+		width: 120px;
+		height: 120px;
+		margin-top: 20px;
+		}
+}
+.add {
+	width: 120px;
+	height: 120px;
+	margin-top: 20px;
+	background: url(../images/bg.png);
+	border-radius: 50%;
+}
+
+@keyframes nav {
+	from {
+		opacity: 0;
+		margin-top: 40px;
+	}
+	to {
+		opacity: 1;
+		margin-top: 20px;
+	}
+}
+#nav {
+	width: 220px;
+	height: 50px;
+	border:1px solid;
+	margin-top: 20px;
+	animation:nav 1s;
+	display: none;
+}
+
+#nav ul {
+	width: 220px;
+	height: 50px;
+}
+#nav li {
+	width: 43px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	border-right:1px solid;
+}
+
+@keyframes zuo{
+	from {
+		left: -180px;
+	}
+	to {
+		left: 0px;
+	}
+}
+.contant1 {
+	width: 185px;
+	height: 99%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: white;
+	display: none;
+	animation: zuo 2s;
+}
+.contant1 #fan {
+	width: 100px;
+	height: 40px;
+	margin:0;
+}
+.contant1 #fan img {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+.contant1 #fan span {
+	font-size: 12px;
+	color: gray;
+	float: left;
+	display: block;
+	margin-top: 8px;
+}
+
+.contant1 #xin {
+	width: 80%;
+	height: 60px;
+}
+.contant1 #xin img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 5px;
+}
+.contant1 #nav2 {
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+}
+.contant1 #nav2 li {
+	height: 40px;
+}
+.contant1 #nav2 li a{
+	color: gray;
+	margin-left: 10px;
+	font-size: 12px;
+}

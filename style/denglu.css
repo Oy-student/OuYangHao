@@ -1,0 +1,81 @@
+h1 {
+	text-align: center;
+	padding-top: 30px;
+	font-size: 40px;
+}
+p {
+	text-align: center;
+	font-size: 12px;
+	font-family: STXingkai;
+	color: #8F8F97;
+}
+form p {
+	height: 30px;
+	width: 200px;
+	margin: 10px auto;
+	border-bottom: 1px solid;
+}
+form p img {
+	width: 25px;
+	height: 25px;
+	margin:0px 14px;
+}
+form p input {
+	height: 25px;
+	border: 0;
+}
+form button {
+	background: #69645D;
+	margin:0px 30%;
+	width: 80px;
+	height: 30px;
+	color: white;
+	margin-bottom: 20px;
+}
+a {
+	margin-top: 50px;
+	color: black;
+	font-size: 12px;
+
+}
+.a1 {
+	float: left;
+}
+.a2 {
+	float: right;
+}
+.clear{
+	clear:both;
+}
+ul {
+	margin-top: 30px;
+	width: 150px;
+	height: 30px;
+}
+.li1 {
+	float: left;
+}
+ul>li>a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 0px;
+	text-align: center;
+	line-height: 30px;
+	animation : flipping 1s;
+}
+ul>li>a>img {
+	width: 30px;
+	height: 30px;
+}
+
+/* 旋转 */
+@keyframes flipping {
+	from{transform:rotateZ(0deg);}
+	to {transform:rotateZ(360deg);}
+}
+
+.li2 {
+	float: right;
+}
